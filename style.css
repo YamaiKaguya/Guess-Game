@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #222222;
+    color: #ff5733;
+    margin-top: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: var(--step-0);
+    font-family: "Press Start 2P", system-ui;
+}
+
+.container {
+    font-family: "Press Start 2P", system-ui;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.container>label {
+    font-size: var(--step--5);
+}
+
+.container>h1 {
+    font-size: var(--step--2);
+}
+
+input[type="text"] {
+    background-color: #222222;
+    border: 2px solid #ff5733;
+    height: 40px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    background-color: #ff5733;
+    font-size: var(--step--3);
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-family: inherit;
+    padding: 10px 15px;
+}
+
+.mystery-box {
+    margin-block: 100px;
+    height: 5px;
+    background-color: #ff5733;
+    position: relative;
+}
+
+.mystery-box::after {
+    content: '?';
+    color: white;
+    font-size: var(--step-1);
+    font-family: "Press Start 2P", system-ui;
+    height: 70px;
+    width: 100px;
+    background-color: #ff5733;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    text-align: center;
+    line-height: 80px;
+}
+
+.gueses,
+.lastResult,
+.lowOrHi {
+    color: white;
+}
+
+.lastResult {
+    padding: 10px;
+}

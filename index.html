@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clamps.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Guess My Number!</h1>
+    <div class="mystery-box"></div>
+    <div class="container">
+        <h1>Start Guesing...</h1>
+        <label for="guessField">(Between 1 to 10) </label>
+        <input type="text" id="guessField" class="guessField"  autofocus />
+        <input type="submit" value="Guess" class="guessSubmit" />
+    </div>
+
+    <div class="resultParas">
+        <p class="gueses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

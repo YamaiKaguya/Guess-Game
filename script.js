@@ -14,7 +14,6 @@ guessField.addEventListener("keydown", function(event) {
     }
 });
 
-
 let randomNumber = Math.floor(Math.random() * 10) + 1;
 let guessCount = 1;
 
@@ -37,9 +36,9 @@ function checkGuess() {
     } else {
         lastResult.textContent = "Wrong!";
         if (userGuess < randomNumber) {
-        lowOrHi.textContent = "Last guess was too low!";
+        lowOrHi.textContent = "Too low!";
         } else if (userGuess > randomNumber) {
-        lowOrHi.textContent = "Last guess was too high!";
+        lowOrHi.textContent = "Too high!";
         }
     }
 
@@ -56,7 +55,9 @@ function resetGame() {
         resetPara.textContent = "";
     }
 
-    resetButton.parentNode.removeChild(resetButton);
+    if (resetButton) {
+        resetButton.parentNode.removeChild(resetButton);
+    }
 
     guessField.disabled = false;
     guessSubmit.disabled = false;

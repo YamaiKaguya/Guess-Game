@@ -88,3 +88,12 @@ input[type="submit"] {
 .lastResult {
     padding: 10px;
 }
+
+.resetButton {
+    background-color: #ff5733;
+    color: white;
+    font-size: var(--step--4);
+    padding: 10px 15px;
+    font-family: "Press Start 2P", system-ui;
+    cursor: pointer;
+}
